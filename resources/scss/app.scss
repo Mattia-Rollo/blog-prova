@@ -1,0 +1,18 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background: white;
+    color: #444;
+}
+article {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+    h1 {
+        color: black;
+    }
+    p {
+        line-height: 1.6;
+    }
+}
