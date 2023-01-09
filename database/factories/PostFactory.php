@@ -22,12 +22,12 @@ class PostFactory extends Factory
             //
             
             'user_id' => User::factory()->create(),
-            'category_id' => Category::factory()->create(),
+            'category_id' => 1,
             'slug' => fake()->slug,
             'title' => fake()->sentence,
             'excerpt' => fake()->sentence(),
-            'body' => fake()->paragraph,
-            'image' => fake()->imageUrl(360, 360, 'animals', true, 'dogs', true),
+            'body' => fake()->paragraph(30),
+            'image' => 'https://picsum.photos/id/50/250/300',
         ];
     }
 }

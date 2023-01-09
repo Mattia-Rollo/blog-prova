@@ -19,7 +19,7 @@ use PhpParser\Node\Name;
 
 Route::get('/', function () {
     // Post::all() problem n+1 , multiquery in @foreach loop when search data in second table related
-    $posts = Post::with('category')->get();
+    $posts = Post::latest()->with('category')->get();
     return view('posts', ['posts' => $posts]);
     // $data = ['foo' => 'barile'];
     // dd($data);

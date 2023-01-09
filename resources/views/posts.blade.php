@@ -11,5 +11,5 @@
         </p>
     </article>
     @endforeach
-
+    <div><img src="/images/sfondo.jpg" alt="" class="img-fluid"></div>
 </x-app>
